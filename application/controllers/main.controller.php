@@ -1,16 +1,13 @@
 <?php
 
 	class Main extends Controller {
-				
-				
+					
 		public function __construct() {
 			parent::__construct();
 		}
 		
-		
 		public function index() {
 			$data['title'] = 'Home';
-			$this->lang->load('', 'main');
 			$this->view->display('lang_test', $data);
 		}
 	

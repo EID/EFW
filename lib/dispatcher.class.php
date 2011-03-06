@@ -10,11 +10,14 @@
 		// Route to current method
 				$route = null,
 		// Route to the method to be cached
-				$cache_route = null;
+				$cache_route = null,
+		// Configuration array copy
+				$config;
 	
 	
 		public function __construct($auto = null) {
 			global $config;
+			$this->config = $config;
 		
 			$this->default = array(
 				controller 		=> $config['default']['controller'], 
@@ -34,10 +37,13 @@
 			$loader = new Loader();
 			
 			// Compute route
-			$url = explode('/', trim($_SERVER['REQUEST_URI']));
-			array_shift($url);
-			array_shift($url);
-			// TODO: improve this shit
+			
+			$protocol = !empty($_SERVER['HTTPS']) ? "https://" : "http://";
+			$serverName = $_SERVER['SERVER_NAME'];
+			$requestURI = $_SERVER['REQUEST_URI'];
+			$requestURL = $protocol . $serverName . $requestURI;
+			
+			$url = array_values( array_diff( explode('/', $requestURL), explode('/', $this->config['app']['base'])) );
 			
 			$controller = !empty( $url[0] ) ? $url[0] : $this->default['controller'];
 			$method		= !empty( $url[1] ) ? $url[1] : $this->default['method'];

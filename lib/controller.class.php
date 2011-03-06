@@ -31,7 +31,7 @@
 			$_SESSION['lang'] = null;
 			
 			// Init some global classes for controllers
-			$this->lang		= new Lang('', $this->config)
+			$this->lang		= new Lang('', $this->config);
 			$this->view 	= new View($this->config);
 			$this->model 	= new Model($this->db);
 			$this->helper	= new Helper();

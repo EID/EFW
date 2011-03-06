@@ -1,6 +1,6 @@
 <?php
 
-	// Chargement des classes
+	// Classes loading
 	require(LIB_PATH . DS . 'loader.class.php');
 	$loader = new Loader();
 
@@ -16,7 +16,6 @@
 	// Buffering
 	ob_start();
 	
-	
 	// Dispatch
 	$loader->load('dispatcher');
 	$disp = new Dispatcher();
@@ -26,7 +25,7 @@
 	}		
 	
 	
-	// Routage de la classe à mettre en cache
+	// Routing for the class that is to be cached
 	if($disp->cache_route != null) {
 		$route = $disp->cache_route;
 	} else {
