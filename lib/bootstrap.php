@@ -25,7 +25,7 @@
 	}		
 	
 	
-	// Routing for the class that is to be cached
+	// Routing for the to be cached class
 	if($disp->cache_route != null) {
 		$route = $disp->cache_route;
 	} else {
