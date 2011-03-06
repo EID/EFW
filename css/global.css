@@ -1,0 +1,426 @@
+/*
+
+	Global.css
+
+*/
+
+
+
+
+/************************************************
+-------------------------------------------------
+---------------------GENERAL---------------------
+-------------------------------------------------
+************************************************/
+
+body
+{
+	background: #f5f5f5 url(../images/bg.png);
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #444;
+	width: 100%;
+	height: 100%;
+}
+
+a
+{
+	color: #f57606;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover
+{
+	color: #f79828;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a, div
+{
+	text-shadow: 0 1px 0 #fff;
+	-moz-text-shadow: 0 1px 0 #fff;
+	-webkit-text-shadow: 0 1px 0 #fff;
+}
+	
+h1, h2, h3, h4, h5, h6
+{
+	color: #4C8BC5;
+	font-family: Museo500;
+	letter-spacing: -2px;
+	margin: 20px 10px;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 25px; }
+h3 { font-size: 22px; }
+h4 { font-size: 19px; }
+h5 { font-size: 16px; letter-spacing: -1px; }
+h6 { font-size: 13px; letter-spacing: -1px; }
+
+.msg, .succes, .alert, .warning, .error
+{
+	overflow: hidden;
+	position: relative;
+	left: -10px;
+	text-shadow: none;
+	-moz-text-shadow: none;
+	-webkit-text-shadow: none;
+}
+
+hr
+{
+	height: 0;
+	border: none;
+	border-bottom: 1px dashed #ddd;
+}
+
+.msg hr, .succes hr, .alert hr, .warning hr, .error hr
+{
+	border-color: #fff;
+}
+
+.msg
+{
+	background: #eee;
+	border: 1px solid #aaa;
+	padding: 10px;
+	margin: 10px;
+}
+
+.alert
+{
+	background: #8fd1ff;
+	border: 1px solid #0096ff;
+	padding: 10px;
+	margin: 10px;
+}
+
+.warning
+{
+	background: #f8fb8f;
+	border: 1px solid #FFEE00;
+	padding: 10px;
+	margin: 10px;
+}
+
+.error
+{
+	background: #ff8f8f;
+	border: 1px solid #ff0000;
+	padding: 10px;
+	margin: 10px;
+}
+
+.succes
+{
+	background: #a5eb8f;
+	border: 1px solid #31d100;
+	padding: 10px;
+	margin: 10px;
+}
+
+ul li
+{
+	list-style-type: none;
+	line-height: 18px;
+}
+
+ul li:before
+{
+	content: '- ';
+	font-weight: bold;
+}
+
+.aligncenter
+{
+	text-align: center;
+}
+
+::-moz-selection{ 	background: #F57606; color:#fff; text-shadow: none; }
+::selection { 		background: #F57606; color:#fff; text-shadow: none; }
+
+/************************************************
+-------------------------------------------------
+---------------------HEADER----------------------
+-------------------------------------------------
+************************************************/
+
+#header_wrapper
+{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	border-top: 4px solid #4c8bc5;
+	border-bottom: 1px solid #e1e1e1;
+	box-shadow: 		0 1px 0 #fff inset;
+	-moz-box-shadow: 	0 1px 0 #fff inset;
+	-webkit-box-shadow: 0 1px 0 #fff inset;
+}
+
+	#header_wrapper header
+	{
+		width: 960px;
+		height: 80px;
+		margin: auto;
+		background: url(../images/glow.png) center;
+	}
+		header .logo
+		{
+			height: 50px;
+			width: 76px;
+			line-height: 50px;
+			margin-top: 15px;
+			float: left;
+			font-family: Museo700;
+			font-size: 35px;
+			letter-spacing: -2px;
+			color: #4d97f5;
+			text-shadow: 			0 0 3px #ccc;
+			-moz-text-shadow: 		0 0 3px #ccc;
+			-webkit-text-shadow: 	0 0 3px #ccc;
+		}
+		
+		header nav
+		{
+			height: 100%;
+			float: right;
+		}
+		
+			header nav ul
+			{
+				height: 100%;
+			}
+			
+				header nav ul li
+				{
+					float: left;
+					margin: 0 10px;
+					line-height: 80px;
+				}
+				
+				header nav ul li:before
+				{
+					content: '';
+				}
+
+				header nav ul li a
+				{
+					color: #444;
+					font-family: Museo700;
+					font-size: 14px;
+					text-transform: uppercase;
+					letter-spacing: -1px;
+				}
+				
+				header nav ul li a:hover
+				{
+					border-bottom: 1px dashed #444;
+					color: #444;
+				}
+	
+/************************************************
+-------------------------------------------------
+---------------------CONTENT---------------------
+-------------------------------------------------
+************************************************/ 
+
+#content_wrapper
+{
+	width: 100%;
+	background: #F3F3F3;
+	border-top: 1px solid #FFF;
+	padding: 20px 0 80px 0;
+}
+	
+	.content ul.block {
+		background: #f9f9f9;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		margin: 0;
+		padding: 0;
+		width: 228px;
+	}
+	
+	.content ul.block li {
+		width: 218px;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 5px;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	
+	.content ul.block li:before {
+		content: '';
+	}
+	
+	.content ul.block li:hover {
+		background: #6eaaf7;
+		color: #fff;
+		border-color: transparent;
+		text-shadow: none;
+		-moz-text-shadow: none;
+		-webkit-text-shadow: none;
+	}
+	
+	.content ul.block li:first-child {
+		border-top: none;
+		border-top-right-radius: 4px;
+		border-top-left-radius: 4px;
+		-moz-border-radius-topleft: 4px;
+		-moz-border-radius-topright: 4px;
+		-webkit-border-top-left-radius: 4px;
+		-webkit-border-top-right-radius: 4px;
+	}
+	
+	.content ul.block li:last-child {
+		border-bottom: none;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-moz-border-radius-bottomright: 4px;
+		-moz-border-radius-bottomleft: 4px;
+		-webkit-border-bottom-right-radius: 4px;
+		-webkit-border-bottom-left-radius: 4px;
+	}
+
+/************************************************
+-------------------------------------------------
+---------------------FOOTER----------------------
+-------------------------------------------------
+************************************************/
+
+#footer_wrapper
+{
+	width: 100%;
+	border-top: 4px solid #4c8bc5;
+	box-shadow: 		0 1px 0 #fff inset;
+	-moz-box-shadow: 	0 1px 0 #fff inset;
+	-webkit-box-shadow: 0 1px 0 #fff inset;
+	color: #999;
+	text-align: center;
+}
+
+	#footer_wrapper footer
+	{
+		width: 960px;
+		min-height: 50px;
+		margin: auto;
+		background: url(../images/glow.png) center;
+		padding: 25px 0 10px 0;
+		position: relative;
+	}
+	
+		#footer_wrapper footer .logo
+		{
+			position: absolute;
+			height: 50px;
+			width: 76px;
+			line-height: 50px;
+			float: left;
+			font-family: Museo700;
+			font-size: 35px;
+			letter-spacing: -2px;
+			color: #4d97f5;
+			text-shadow: 			0 0 3px #ccc;
+			-moz-text-shadow: 		0 0 3px #ccc;
+			-webkit-text-shadow: 	0 0 3px #ccc;
+		}
+		
+/************************************************
+-------------------------------------------------
+---------------------ERROR-----------------------
+-------------------------------------------------
+************************************************/
+
+.error_page
+{
+	text-align: center;
+	color: #444;
+	padding: 50px 10px;
+}
+
+	.error_page h1
+	{
+		text-align: center;
+		color: #444;
+		line-height: 42px;
+	}
+
+/************************************************
+-------------------------------------------------
+---------------------FIXES-----------------------
+-------------------------------------------------
+************************************************/
+
+/*	Fixs for webkit	*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type=button], input[type=submit], input[type=reset], button, a.button
+	{
+		line-height: 18px;
+		position: relative;
+		top: 20px;
+	}
+
+}
+
+/*	Fixs for IE		*/
+
+.ie6 input[type=button], .ie6 input[type=submit], .ie6 input[type=reset], .ie6 button, .ie6 a.button, 
+.ie7 input[type=button], .ie7 input[type=submit], .ie7 input[type=reset], .ie7 button, .ie7 a.button, 
+.ie8 input[type=button], .ie8 input[type=submit], .ie8 input[type=reset], .ie8 button, .ie8 a.button, 
+.ie9 input[type=button], .ie9 input[type=submit], .ie9 input[type=reset], .ie9 button, .ie9 a.button
+{
+	line-height: 18px;
+	position: relative;
+	top: 20px;
+}
+
+
+/************************************************
+-------------------------------------------------
+-----------------------DOC-----------------------
+-------------------------------------------------
+************************************************/
+
+.path
+{
+	background: #eee;
+	border: 1px solid #aaa;
+	color: #666;
+	margin: 0;
+	padding: 0;
+}
+
+.indent div, .indent p, .indent h5, .indent h6
+{
+	padding-left: 30px;
+}
+
+.indent ul, .indent ol
+{
+	 padding-left: 50px;
+}
+
+.file
+{
+	display: block;
+	font-weight: bold;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	margin-left: 40px;
+	padding-top: 20px;
+}
+
+#sommaire {
+	width: 320px;
+	float:right;
+	padding: 30px;
+	background: #ebebeb;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	/* border-left: 1px solid #ddd; */
+}

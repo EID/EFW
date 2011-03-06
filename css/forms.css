@@ -1,0 +1,112 @@
+/*
+
+	Forms.css
+	
+*/
+
+
+
+
+form
+{
+	margin: 10px;
+}
+
+form p:last-child
+{
+	text-align: center;
+}
+
+form h1, form h2, form h3, form h4, form h5, form h6
+{
+	position: relative;
+	left: -35px;
+}
+
+.add_question_form input[type=checkbox]
+{
+	margin: 5px;
+	position: relative;
+	top: -17px;
+}
+
+input[type=checkbox], input[type=radio]
+{
+	margin: 5px;
+}
+
+input[type=checkbox] + label, input[type=radio] + label
+{
+	position: relative;
+	top: -2px;
+}
+
+input[type^=submit], input[type^=button]
+{
+	display: inline;
+	padding: 7px 23px;
+	background: #f57606;
+	color: #f2f2f2;
+	border: 6px solid #e7e7e7;
+	margin: 10px 0;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	font-weight: bold;
+}
+
+input[type^=submit]:hover, input[type^=button]:hover
+{
+	text-shadow: 0 1px 1px #444;
+	-moz-text-shadow: 0 1px 1px #444;
+	-webkit-text-shadow: 0 1px 1px #444;
+	-o-text-shadow: 0 1px 1px #444;
+	border: 6px solid #ddd;
+}
+
+input[type=submit].blue, input[type=button].blue
+{
+	background: #4d97f5;
+}
+
+input[type=submit].red, input[type=button].red
+{
+	background: #FF2B41;
+}
+
+input[type=submit].green, input[type=button].green
+{
+	background: #4EF249;
+}
+
+input[type=text], textarea
+{
+	width: 300px;
+	height: 30px;
+	background: #fff;
+	border: 6px solid #ddd;
+	border: 6px solid rgba(0,0,0,0.1);
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin: 5px 5px 5px 0;
+	padding-left: 5px;
+	font-family: Arial;
+	font-size: 12px;
+	color: #ccc;
+	outline: none;
+}
+
+input[type=text]:focus, textarea:focus
+{
+	color: #444;
+}
+
+textarea
+{
+	padding-top: 5px;
+	width: 921px;
+	height: 200px;
+	resize: none;
+}
