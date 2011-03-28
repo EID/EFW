@@ -8,7 +8,7 @@
 		
 		public function index() {
 			$data['title'] = 'Home';
-			$this->view->display('lang_test', $data);
+			$this->view->display('index', $data);
 		}
 	
 		public function error($msg = '') {

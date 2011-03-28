@@ -3,9 +3,10 @@
 	// App config
 
 	$config['app']['title']				= 'EyoFramework';
-	$config['app']['version']			= '0.0.6';
-	$config['app']['base']				= 'http://example.com';
-	$config['app']['lang']				= 'en';
+	$config['app']['version']			= '0.0.8';
+	$config['app']['base']				= 'http://localhost/efw/';
+	$config['app']['authors']			= Array('Nestiut', 'CMat');
+	$config['app']['desc']				= 'Description';
 
 	// Lang config
 

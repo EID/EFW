@@ -5,7 +5,7 @@
 <!--[if IE 7 ]>    <html lang="<?php echo $config['app']['lang']; ?>" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="<?php echo $config['app']['lang']; ?>" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="<?php echo $config['app']['lang']; ?>" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $config['app']['lang']; ?>" class="no-js"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $config['lang']['default']; ?>" class="no-js"> <!--<![endif]-->
 	<head>
 		<meta charset="<?php echo $config['display']['charset']; ?>">
 
@@ -14,8 +14,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 		<title><?php echo $config['display']['title']['prefix']. $title; ?></title>
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="<?php echo $config['app']['desc']; ?>">
+		<meta name="author" content="<?php echo implode(', ', $config['app']['authors']); ?>">
 
 		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,12 +31,6 @@
 
 		<!-- Uncomment if you are specifically targeting less enabled mobile browsers
 		<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
-		
-		<!-- Javascript -->
-
-		<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-		<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
 
 		<!--[if lt IE 7 ]>
 		<script src="js/libs/dd_belatedpng.js"></script>
@@ -44,12 +38,11 @@
 		<![endif]-->
 		
 		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-		<script src="js/libs/modernizr-1.6.min.js"></script>
-
+		<script src="js/libs/modernizr-1.7.min.js"></script>
 	</head>
 
 	<body>
-		<div id="header_wrapper">
+		<section id="header_wrapper">
 			<header>
 				<div class="logo">EFW</div>
 				<nav>
@@ -58,8 +51,8 @@
 					</ul>
 				</nav>
 			</header>
-		</div>
+		</section>
 					
-		<div id="content_wrapper">
-			<div class="container_24 clearfix">
-				<div class="content grid_24 indent">
+		<section id="content_wrapper">
+			<section class="container_24 clearfix">
+				<section class="content grid_24 indent">
