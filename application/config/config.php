@@ -4,7 +4,7 @@
 
 	$config['app']['title']				= 'EyoFramework';
 	$config['app']['version']			= '0.0.8';
-	$config['app']['base']				= 'http://example.com/';
+	$config['app']['base']				= 'http://localhost/efw/';
 	$config['app']['authors']			= Array('Nestiut', 'CMat');
 	$config['app']['desc']				= 'Description';
 
@@ -40,6 +40,6 @@
 	
 	$config['sql']['locate'] 			= 			0; //								1;
 	
-	$config['sql']['autoconnect'] 		= true;
+	$config['sql']['autoconnect'] 		= false;
 	
 ?>
